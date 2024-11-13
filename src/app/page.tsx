@@ -17,7 +17,7 @@ const categoryMapping: { [key: string]: string } = {
 
 async function getNews(category: string): Promise<NewsResponse> {
   const apiCategory = categoryMapping[category] || '';
-  const url = `https://newsapi.org/v2/top-headlines?country=us${apiCategory ? `&category=${apiCategory}` : ''}&apiKey=277e36e82ba6411a83964a61e1f39e28`;
+  const url = `https://newsapi.org/v2/top-headlines?country=us${apiCategory ? `&category=${apiCategory}` : ''}&apiKey=`;
 
   const res = await fetch(url, { next: { revalidate: 300 } });
 
