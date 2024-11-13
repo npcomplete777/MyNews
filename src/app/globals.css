@@ -1,3 +1,4 @@
+/* src\app\global.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,5 +18,15 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-geist-sans);
+  font-weight: 700;
+}
+
+a {
+  transition: color 0.2s;
 }
